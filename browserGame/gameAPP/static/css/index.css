@@ -1,0 +1,58 @@
+#the-game{
+    display: none;
+    position: relative;
+    left: 20%;
+}
+#game-btn{
+    display: block;
+    position: relative;
+    bottom: 258px;
+    border-radius: 0%;
+    width: fit-content;
+    padding: 2%;
+    font-size: 2vh;
+    left: 78%;
+}
+#kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+    display: block;
+    width: calc(2rem + 1vw);
+    background-color: rgba(240, 248, 255, 0);
+    border-style: none;
+}
+.splatter{
+    width: 100%;
+}
+#kill-1{
+    position: relative;
+    bottom: 25px;
+    right: 10%;
+}
+#kill-2{
+    position: relative;
+    bottom: 40px;
+    left:15%
+}
+#kill-3{
+    position: relative;
+    bottom: 73px;
+    left:49%
+}
+#kill-4{
+    position: relative;
+    bottom: 10px;
+    left:33%
+}
+#kill-5{
+    position: relative;
+    bottom: 56px;
+    left:63%
+}
+#kill-6{
+    position: relative;
+    bottom: 25px;
+    left:55%
+}
+#kill-7{
+    position: relative;
+    bottom: 34px;
+}

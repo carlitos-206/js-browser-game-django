@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'js/game.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Browser Game</title>
+</head>
+<body>
+    <div class="gif-set-2">
+        <img id="fish-gif"src="{% static 'img/animated-fish-mopping.gif' %}" alt="">
+        <img id="floor-sign"src="{% static 'img/wavy-floor.gif' %}" alt="">
+    </div>
+    <button id="game-btn" onclick="hideStartBtn(), showGame(), gameOver()" >Tap to Clean</button>
+    <div id="the-game" class="game">
+        <button class="kill-btn" id="kill-1" onclick="kill_1()" ><img class="splatter" id="splat-1" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+        <button class="kill-btn" id="kill-2" onclick="kill_2()" ><img class="splatter" id="splat-2" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+        <button class="kill-btn" id="kill-3" onclick="kill_3()" ><img class="splatter" id="splat-3" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+        <button class="kill-btn" id="kill-4" onclick="kill_4()" ><img class="splatter" id="splat-4" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+        <button class="kill-btn" id="kill-5" onclick="kill_5()" ><img class="splatter" id="splat-5" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+        <button class="kill-btn" id="kill-6" onclick="kill_6()" ><img class="splatter" id="splat-6" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+        <button class="kill-btn" id="kill-7" onclick="kill_7()" ><img class="splatter" id="splat-7" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+    </div>
+</body>
+</html>
