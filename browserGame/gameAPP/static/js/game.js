@@ -80,7 +80,8 @@ function kill_7() {
 };
 function gameOver() {
     var timeLeft = 10;
-    var timerId = setInterval(countdown, 10000);
+    if (timerId) clearTimeout(timerId);
+    var timerId = setTimeout(countdown, 10000);
     var killGame = document.getElementById("the-game")
     function endGame(){
         if (killGame.style.display === "none"){
@@ -94,13 +95,11 @@ function gameOver() {
     function countdown() {
         console.log("time left:"+timeLeft)
         if (timeLeft == 0 || killCount !==7) {
-            clearTimeout(timerId);
             timeLeft--;
             console.log("time left"+timeLeft)
             alert("YOU LOOSE!!!!");
             return endGame();
         } else { 
-            clearTimeout(timerId);
             timeLeft--;
             console.log("time left"+timeLeft)
             alert("YOU WON!!!!");
